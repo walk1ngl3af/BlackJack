@@ -1,0 +1,32 @@
+/* region BaseWeb */
+h1 {
+    color: white;
+    max-width: 15%;
+    margin-left: 42.5%;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+body{
+    background-color:#86BAA1;
+}
+/* endregion */
+button{
+    min-width: 10%;
+    margin-left: 45%;
+    background-color:#873D48
+}
+.container {
+    background-color: #53687E;
+    border: solid 5px #12130F;
+}
+
+.content {
+    min-height:400px;
+}
+/*region HideAndSeek */
+.hidden{
+}
+/* endregion */
+
