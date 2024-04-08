@@ -2,16 +2,26 @@
 const hitButton = document.getElementById('hit');
 const stayButton = document.getElementById('stay');
 const dealButton = document.getElementById('deal');
-// endregion
+//score and cards constants
 let total;
 let startingCard1 = Math.floor((Math.random() * 11) + 1);
+let cardType1;
 let startingCard2 = Math.floor((Math.random() * 11) + 1);
+let cardType2;
+let NCValue = [];
 let newCard;
-
-//Made by Ricardo and Thomas
-// region Math //
+//Turn Number
+let turn = 0;
+//AI cards
+let aiCard1 = Math.floor((Math.random() * 11) + 1);
+let aiCard2 = Math.floor((Math.random() * 11) + 1);
+let aiCardStartingTotal = aiCard1 + aiCard2
+// endregion
+// region Math
 while(total > 21 && startingCard1 === 11 || startingCard2 === 11 && total > 21) {
-    +prompt("Do you want the ace to be a 1 or 11?");
+    if(startingCard1 === 11) {
+        +prompt("Do you want the ace to be 11 or 1");
+    }
 }
 function hit() {
     newCard = Math.floor((Math.random() * 11) + 1);
@@ -45,7 +55,7 @@ function restart() {
     hitButton.classList.add('hidden');
     stayButton.classList.add('hidden');
     dealButton.classList.remove('hidden');
-
+    NCValue = [];
 }
 
 function clearHidden() {
@@ -94,27 +104,27 @@ function addStartingHand(){
     }
 
     if(startingCard2 === 1) {
-        //random number 1-4 for different types of cards
+        cardType2 = Math.floor((Math.random() * 11) + 1);
         //if cardType = x card ≠ x again
     } else if(startingCard2 === 2) {
-        //random number 1-(variable for amount of cards left) for different types of cards
+        cardType2 = Math.floor((Math.random() * 11) + 1);
     } else if(startingCard2 === 3) {
-        //random number 1-4 for different types of cards
+        cardType2 = Math.floor((Math.random() * 11) + 1);
     } else if(startingCard2 === 4) {
-        //random number 1-4 for different types of cards
+        cardType2 = Math.floor((Math.random() * 11) + 1);
     } else if(startingCard2 === 5) {
-        //random number 1-4 for different types of cards
+        cardType2 = Math.floor((Math.random() * 11) + 1);
     } else if(startingCard2 === 6) {
-        //random number 1-4 for different types of cards
+        cardType2 = Math.floor((Math.random() * 11) + 1);
     } else if(startingCard2 === 7) {
-        //random number 1-4 for different types of cards
+        cardType2 = Math.floor((Math.random() * 11) + 1);
     } else if(startingCard2 === 8) {
-        //random number 1-4 for different types of cards
+        cardType2 = Math.floor((Math.random() * 11) + 1);
     } else if(startingCard2 === 9) {
-        //random number 1-4 for different types of cards
+        cardType2 = Math.floor((Math.random() * 11) + 1);
     } else if(startingCard2 === 10) {
-        //random number 1-4 for different types of cards
+        cardType2 = Math.floor((Math.random() * 11) + 1);
     } else if(startingCard2 === 11) {
-        //random number 1-4 for different types of cards
+        cardType2 = Math.floor((Math.random() * 11) + 1);
     }
 }
