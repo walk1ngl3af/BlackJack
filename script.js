@@ -4,6 +4,7 @@ const stayButton = document.getElementById('stay');
 const dealButton = document.getElementById('deal');
 const startingCard1Image = document.querySelector('img[src="src1"]');
 const startingCard2Image = document.querySelector('img[src="src2"]');
+const cardArea = document.getElementById('cardArea');
 //score and cards constants
 let total;
 let startingCard1 = Math.floor((Math.random() * 11) + 1);
@@ -23,7 +24,7 @@ let aiCardStartingTotal = aiCard1 + aiCard2
 // endregion
 // region Math
 function aceChanger() {
-    while (startingCard1 === 11 || startingCard2 === 11) {
+    if (startingCard1 === 11 || startingCard2 === 11) {
         if (startingCard1 === 11) {
             let aceValue = +prompt("Do you want the ace to be 11 or 1");
             while (aceValue !== 1 && aceValue !== 11) {
@@ -106,6 +107,7 @@ function updateTotal(){
 // region drawingCards //
 function addStartingHand(){
     cardType1 = Math.floor((Math.random() * 4) + 1);
+
     if(startingCard1 === 1) {
         if(cardType1 === 1) {
             console.log("Card 1 - Type 1");
@@ -218,15 +220,15 @@ function addStartingHand(){
         if(cardType1 === 1) {
             console.log("Card 7 - Type 1");
             startingCard1Image.src = 'src1';
-            src1 = `${spades7}`;
+            startingCard1Image.src = `${spades7}`;
         } else if(cardType1 === 2) {
             console.log("Card 7 - Type 2");
             startingCard1Image.src = 'src1';
-            src1 = `${hearts7}`;
+            startingCard1Image.src = `${hearts7}`;
         } else if(cardType1 === 3) {
             console.log("Card 7 - Type 3");
             startingCard1Image.src = 'src1';
-            src1 = `${clubs7}`;
+            startingCard1Image.src = `${clubs7}`;
         } else {
             console.log("Card 7 - Type 4");
             startingCard1Image.src = 'src1';
@@ -240,69 +242,69 @@ function addStartingHand(){
         } else if(cardType1 === 2) {
             console.log("Card 8 - Type 2");
             startingCard1Image.src = 'src1';
-            src1 = `${hearts8}`;
+            startingCard1Image.src = `${hearts8}`;
         } else if(cardType1 === 3) {
             console.log("Card 8 - Type 3");
             startingCard1Image.src = 'src1';
-            src1 = `${clubs8}`;
+            startingCard1Image.src = `${clubs8}`;
         } else {
             console.log("Card 8 - Type 4");
             startingCard1Image.src = 'src1';
-            src1 = `${diamonds8}`;
+            startingCard1Image.src = `${diamonds8}`;
         }
     } else if(startingCard1 === 9) {
         if(cardType1 === 1) {
             console.log("Card 9 - Type 1");
             startingCard1Image.src = 'src1';
-            src1 = `${spades9}`;
+            startingCard1Image.src = `${spades9}`;
         } else if(cardType1 === 2) {
             console.log("Card 9 - Type 2");
             startingCard1Image.src = 'src1';
-            src1 = `${hearts9}`;
+            startingCard1Image.src = `${hearts9}`;
         } else if(cardType1 === 3) {
             console.log("Card 9 - Type 3");
             startingCard1Image.src = 'src1';
-            src1 = `${clubs9}`;
+            startingCard1Image.src = `${clubs9}`;
         } else {
             console.log("Card 9 - Type 4");
             startingCard1Image.src = 'src1';
-            src1 = `${diamonds9}`;
+            startingCard1Image.src = `${diamonds9}`;
         }
     } else if(startingCard1 === 10) {
         if(cardType1 === 1) {
             console.log("Card 10 - Type 1");
             startingCard1Image.src = 'src1';
-            src1 = `${spades10}`;
+            startingCard1Image.src = `${spades10}`;
         } else if(cardType1 === 2) {
             console.log("Card 10 - Type 2");
             startingCard1Image.src = 'src1';
-            src1 = `${hearts10}`;
+            startingCard1Image.src = `${hearts10}`;
         } else if(cardType1 === 3) {
             console.log("Card 10 - Type 3");
             startingCard1Image.src = 'src1';
-            src1 = `${clubs10}`;
+            startingCard1Image.src = `${clubs10}`;
         } else {
             console.log("Card 10 - Type 4");
             startingCard1Image.src = 'src1';
-            src1 = `${diamonds10}`;
+            startingCard1Image.src = `${diamonds10}`;
         }
     } else if(startingCard1 === 11) {
         if(cardType1 === 1) {
             console.log("Card 11 - Type 1");
             startingCard1Image.src = 'src1';
-            src1 = `${spadesAce}`;
+            startingCard1Image.src = `${spadesAce}`;
         } else if(cardType1 === 2) {
             console.log("Card 11 - Type 2");
             startingCard1Image.src = 'src1';
-            src1 = `${heartsAce}`;
+            startingCard1Image.src = `${heartsAce}`;
         } else if(cardType1 === 3) {
             console.log("Card 11 - Type 3");
             startingCard1Image.src = 'src1';
-            src1 = `${clubsAce}`;
+            startingCard1Image.src = `${clubsAce}`;
         } else {
             console.log("Card 11 - Type 4");
             startingCard1Image.src = 'src1';
-            src1 = `${diamondsAce}`;
+            startingCard1Image.src = `${diamondsAce}`;
         }
     }
 
