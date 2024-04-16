@@ -15,8 +15,6 @@ let NCValue = [];
 let newCard;
 let src1;
 let src2;
-//Turn Number
-let turn = 0;
 //AI cards
 let aiCard1 = Math.floor((Math.random() * 11) + 1);
 let aiCard2 = Math.floor((Math.random() * 11) + 1);
