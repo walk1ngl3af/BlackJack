@@ -5,6 +5,7 @@ const dealButton = document.getElementById('deal');
 const startingCard1Image = document.querySelector('img[src="src1"]');
 const startingCard2Image = document.querySelector('img[src="src2"]');
 const cardArea = document.getElementById('cardArea');
+const aiCardArea = document.getElementById('aiCardArea');
 //score and cards constants
 let total;
 let startingCard1 = Math.floor((Math.random() * 11) + 1);
@@ -16,6 +17,8 @@ let newCard;
 let src1;
 let src2;
 //AI cards
+const aiStartingCard1 = document.getElementById('aiStartingCard1');
+const aiStartingCard2 = document.getElementById('aiStartingCard2');
 let aiCard1 = Math.floor((Math.random() * 11) + 1);
 let aiCard2 = Math.floor((Math.random() * 11) + 1);
 let aiCardStartingTotal = aiCard1 + aiCard2
@@ -54,7 +57,7 @@ function hit() {
     //todo end the game if the cards add to a value greater than 21
 }
 
-function stay() {
+function stand() {
     console.log("Stay");
     //todo check if value is greater while =< 21
 }
