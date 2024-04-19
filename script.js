@@ -109,124 +109,124 @@ function updateTotal(){
 function addStartingHand(){
     cardType1 = Math.floor((Math.random() * 4) + 1);
 
-    if(startingCard1 === 1) {
-        if(cardType1 === 1) {
+    if (startingCard1 === 1) {
+        if (cardType1 === 1) {
             console.log("Card 1 - Type 1");
             startingCard1Image.src = 'src1';
             startingCard1Image.src = `${spadesAce}`;
-        } else if(cardType1 === 2) {
+        } else if (cardType1 === 2) {
             console.log("Card 1 - Type 2");
             startingCard1Image.src = 'src1';
             startingCard1Image.src = `${heartsAce}`;
-        } else if(cardType1 === 3) {
+        } else if (cardType1 === 3) {
             console.log("Card 1 - Type 3");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${clubsAce}`;
+            startingCard1Image.src = `${clubsAce}`;
         } else {
             console.log("Card 1 - Type 4");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${diamondsAce}`;
+            startingCard1Image.src = `${diamondsAce}`;
         }
-    } else if(startingCard1 === 2) {
-        if(cardType1 === 1) {
+    } else if (startingCard1 === 2) {
+        if (cardType1 === 1) {
             console.log("Card 2 - Type 1");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${spades2}`;
-        } else if(cardType1 === 2) {
+            startingCard1Image.src = `${spades2}`;
+        } else if (cardType1 === 2) {
             console.log("Card 2 - Type 2");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${hearts2}`;
-        } else if(cardType1 === 3) {
+            startingCard1Image.src = `${hearts2}`;
+        } else if (cardType1 === 3) {
             console.log("Card 2 - Type 3");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${clubs2}`;
+            startingCard1Image.src = `${clubs2}`;
         } else {
             console.log("Card 2 - Type 4");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${diamonds2}`;
+            startingCard1Image.src = `${diamonds2}`;
         }
-    } else if(startingCard1 === 3) {
-        if(cardType1 === 1) {
+    } else if (startingCard1 === 3) {
+        if (cardType1 === 1) {
             console.log("Card 3 - Type 1");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${spades3}`;
-        } else if(cardType1 === 2) {
+            startingCard1Image.src = `${spades3}`;
+        } else if (cardType1 === 2) {
             console.log("Card 3 - Type 2");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${hearts3}`;
-        } else if(cardType1 === 3) {
+            startingCard1Image.src = `${hearts3}`;
+        } else if (cardType1 === 3) {
             console.log("Card 3 - Type 3");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${clubs3}`;
+            startingCard1Image.src = `${clubs3}`;
         } else {
             console.log("Card 3 - Type 4");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${diamonds3}`;
+            startingCard1Image.src = `${diamonds3}`;
         }
-    } else if(startingCard1 === 4) {
-        if(cardType1 === 1) {
+    } else if (startingCard1 === 4) {
+        if (cardType1 === 1) {
             console.log("Card 4 - Type 1");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${spades4}`;
-        } else if(cardType1 === 2) {
+            startingCard1Image.src = `${spades4}`;
+        } else if (cardType1 === 2) {
             console.log("Card 4 - Type 2");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${hearts4}`;
-        } else if(cardType1 === 3) {
+            startingCard1Image.src = `${hearts4}`;
+        } else if (cardType1 === 3) {
             console.log("Card 4 - Type 3");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${clubs4}`;
+            startingCard1Image.src = `${clubs4}`;
         } else {
             console.log("Card 4 - Type 4");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${diamonds4}`;
+            startingCard1Image.src = `${diamonds4}`;
         }
-    } else if(startingCard1 === 5) {
-        if(cardType1 === 1) {
+    } else if (startingCard1 === 5) {
+        if (cardType1 === 1) {
             console.log("Card 5 - Type 1");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${spades5}`;
-        } else if(cardType1 === 2) {
+            startingCard1Image.src = `${spades5}`;
+        } else if (cardType1 === 2) {
             console.log("Card 5 - Type 2");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${hearts5}`;
-        } else if(cardType1 === 3) {
+            startingCard1Image.src = `${hearts5}`;
+        } else if (cardType1 === 3) {
             console.log("Card 5 - Type 3");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${clubs5}`;
+            startingCard1Image.src = `${clubs5}`;
         } else {
             console.log("Card 5 - Type 4");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${diamonds5}`;
+            startingCard1Image.src = `${diamonds5}`;
         }
-    } else if(startingCard1 === 6) {
-        if(cardType1 === 1) {
+    } else if (startingCard1 === 6) {
+        if (cardType1 === 1) {
             console.log("Card 6 - Type 1");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${spades6}`;
-        } else if(cardType1 === 2) {
+            startingCard1Image.src = `${spades6}`;
+        } else if (cardType1 === 2) {
             console.log("Card 6 - Type 2");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${hearts6}`;
-        } else if(cardType1 === 3) {
+            startingCard1Image.src = `${hearts6}`;
+        } else if (cardType1 === 3) {
             console.log("Card 6 - Type 3");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${clubs6}`;
+            startingCard1Image.src = `${clubs6}`;
         } else {
             console.log("Card 6 - Type 4");
             startingCard1Image.src = 'src1';
-            startingCard1Image.src  = `${diamonds6}`;
+            startingCard1Image.src = `${diamonds6}`;
         }
-    } else if(startingCard1 === 7) {
-        if(cardType1 === 1) {
+    } else if (startingCard1 === 7) {
+        if (cardType1 === 1) {
             console.log("Card 7 - Type 1");
             startingCard1Image.src = 'src1';
             startingCard1Image.src = `${spades7}`;
-        } else if(cardType1 === 2) {
+        } else if (cardType1 === 2) {
             console.log("Card 7 - Type 2");
             startingCard1Image.src = 'src1';
             startingCard1Image.src = `${hearts7}`;
-        } else if(cardType1 === 3) {
+        } else if (cardType1 === 3) {
             console.log("Card 7 - Type 3");
             startingCard1Image.src = 'src1';
             startingCard1Image.src = `${clubs7}`;
@@ -235,8 +235,8 @@ function addStartingHand(){
             startingCard1Image.src = 'src1';
             src1 = `${diamonds7}`;
         }
-    } else if(startingCard1 === 8) {
-        if(cardType1 === 1) {
+    } else if (startingCard1 === 8) {
+        if (cardType1 === 1) {
             console.log("Card 8 - Type 1");
             startingCard1Image.src = 'src1';
             src1 = `${spades8}`;
@@ -244,7 +244,7 @@ function addStartingHand(){
             console.log("Card 8 - Type 2");
             startingCard1Image.src = 'src1';
             startingCard1Image.src = `${hearts8}`;
-        } else if(cardType1 === 3) {
+        } else if (cardType1 === 3) {
             console.log("Card 8 - Type 3");
             startingCard1Image.src = 'src1';
             startingCard1Image.src = `${clubs8}`;
@@ -253,16 +253,16 @@ function addStartingHand(){
             startingCard1Image.src = 'src1';
             startingCard1Image.src = `${diamonds8}`;
         }
-    } else if(startingCard1 === 9) {
-        if(cardType1 === 1) {
+    } else if (startingCard1 === 9) {
+        if (cardType1 === 1) {
             console.log("Card 9 - Type 1");
             startingCard1Image.src = 'src1';
             startingCard1Image.src = `${spades9}`;
-        } else if(cardType1 === 2) {
+        } else if (cardType1 === 2) {
             console.log("Card 9 - Type 2");
             startingCard1Image.src = 'src1';
             startingCard1Image.src = `${hearts9}`;
-        } else if(cardType1 === 3) {
+        } else if (cardType1 === 3) {
             console.log("Card 9 - Type 3");
             startingCard1Image.src = 'src1';
             startingCard1Image.src = `${clubs9}`;
