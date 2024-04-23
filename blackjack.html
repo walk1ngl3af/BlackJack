@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html`>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,15 @@
 <div class="container">
     <h1 id="title">Blackjack</h1>
     <div class="content">
-
+        <h2 id="total" class ="total">Total: </h2>
+        <div id="aiCardArea">
+            <img id="aiStartingCard1" src="srcAI1" height="300" width="200" alt="Ai Card 1"/>
+            <img id="aiStartingCard2" src="srcAI2" height="300" width="200" alt="Ai Card 2"/>
+        </div>
+        <div id="cardArea">
+            <img id="startingCard1" src="src1" height="300" width="200" alt="Card 1"/>
+            <img id="startingCard2" src="src2" height="300" width="200" alt="Card 2"/>
+        </div>
     </div>
     <button id="hit" class="hidden" onClick="hit()">Hit</button>
     <button id="stay" class="hidden" onClick="stand()">Stand</button>
