@@ -1,15 +1,18 @@
 /* region BaseWeb */
 h1 {
+    background-color:black;
     color: white;
     max-width: 15%;
     margin-left: 42.5%;
-    border: 2px solid black;
+    border: 2px solid #ffffff;
     border-radius: 10px;
     text-align: center;
+    font-family: Copperplate, Papyrus, fantasy;
 }
 
 body{
-    background-color:#86BAA1;
+    background-color: #012f49;
+    font-family: Copperplate, Papyrus, fantasy;
 }
 button{
     min-width: 10%;

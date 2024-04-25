@@ -132,8 +132,6 @@ function aceChanger() {
 function hit() {
     newCard = Math.floor((Math.random() * 11) + 1);
     NCValue.push(newCard);
-    console.log("Hit");
-    console.log(`${newCard}`);
     updateTotal();
     addCard();
     addAICard();
@@ -143,14 +141,11 @@ function hit() {
 }
 
 function stand() {
-    console.log("Stay");
     revealAICards();
     endGame();
 }
 
 function deal() {
-    console.log("Deal")
-    console.log(`${startingCard1} and ${startingCard2}`);
     clearHidden();
     addStartingHand();
     aceChanger();
@@ -162,7 +157,6 @@ function deal() {
 }
 function restart() {
     console.clear();
-    console.log("Restarted");
     startingCard1 = Math.floor((Math.random() * 11) + 1);
     startingCard2 = Math.floor((Math.random() * 11) + 1);
     total = 0;
@@ -202,7 +196,6 @@ function updateTotal(){
         total += NCValue[i];
     }
     totalElement.textContent = `Total: ${total}`;
-    console.log(total);
 }
 // endregion //
 // region DrawingCards
@@ -990,14 +983,10 @@ function runAI() {
         let aiNewCard = Math.floor((Math.random() * 11) + 1);
         aiNCValue.push(aiNewCard);
         otherTotal += aiNewCard; // Update total
-        console.log(`${aiNewCard}`);
-        console.log("AI Hit");
     }
 
     // Once total is 17 or higher, AI should stop drawing cards
     if (otherTotal >= 17) {
-        console.log("AI Stay");
-        console.log(`Other Total: ${otherTotal}`);
     }
 }
 
