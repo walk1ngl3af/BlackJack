@@ -1,8 +1,9 @@
 //Made by Ricardo and Thomas
 /* Also we accidentally made King, Queen, and Jack rarer than they should be. Could
    be fixed by doing random number 14-1 and having 12, 13, and 14 being the royal
-   cards.
+   cards and assigning them a score value of 10.
  */
+//todo change generatedAiCard to something that references the images
 //todo reveal Ai cards in function endGame() whether win, lose, or tie
 // region Constants
 //math constants
@@ -23,6 +24,7 @@ let NCValue = [];
 let newCard;
 let src1;
 let src2;
+let gameEnded = 0;
 //AI cards
 const aiStartingCard1 = document.getElementById('aiStartingCard1');
 const aiStartingCard2 = document.getElementById('aiStartingCard2');
@@ -181,7 +183,7 @@ function endGame(){
     stayButton.classList.add('hidden');
     dealButton.classList.add('hidden');
     revealAICards();
-    revealAllAICards();
+    gameEnded++;
     if(total > otherTotal && total <= 21 || otherTotal > 21 && total <= 21) {
         alert('You Win!');
     }
@@ -1363,6 +1365,152 @@ function addAICard() {
 }
 
 function revealAllAICards() {
-
+    let aiCardType = Math.floor((Math.random() * 4) + 1);
+    for(i = 0; i < aiNCValue.length; i++) {
+        if(aiNCValue[i] === 1) {
+            if(aiCardType === 1) {
+                generatedAiCard.src = `${spadesAce}`;
+            } else if(aiCardType === 2) {
+                generatedAiCard.src = `${heartsAce}`;
+            } else if(aiCardType === 3) {
+                generatedAiCard.src = `${clubsAce}`;
+            } else if(aiCardType === 4) {
+                generatedAiCard.src = `${diamondsAce}`;
+            }
+        } else if(aiNCValue[i] === 2) {
+            if(aiCardType === 1) {
+                generatedAiCard.src = `${spades2}`;
+            } else if(aiCardType === 2) {
+                generatedAiCard.src = `${hearts2}`;
+            } else if(aiCardType === 3) {
+                generatedAiCard.src = `${clubs2}`;
+            } else if(aiCardType === 4) {
+                generatedAiCard.src = `${diamonds2}`;
+            }
+        } else if(aiNCValue[i] === 3) {
+            if(aiCardType === 1) {
+                generatedAiCard.src = `${spades3}`;
+            } else if(aiCardType === 2) {
+                generatedAiCard.src = `${hearts3}`;
+            } else if(aiCardType === 3) {
+                generatedAiCard.src = `${clubs3}`;
+            } else if(aiCardType === 4) {
+                generatedAiCard.src = `${diamonds3}`;
+            }
+        } else if(aiNCValue[i] === 4) {
+            if(aiCardType === 1) {
+                generatedAiCard.src = `${spades4}`;
+            } else if(aiCardType === 2) {
+                generatedAiCard.src = `${hearts4}`;
+            } else if(aiCardType === 3) {
+                generatedAiCard.src = `${clubs4}`;
+            } else if(aiCardType === 4) {
+                generatedAiCard.src = `${diamonds4}`;
+            }
+        } else if(aiNCValue[i] === 5) {
+            if(aiCardType === 1) {
+                generatedAiCard.src = `${spades5}`;
+            } else if(aiCardType === 2) {
+                generatedAiCard.src = `${hearts5}`;
+            } else if(aiCardType === 3) {
+                generatedAiCard.src = `${clubs5}`;
+            } else if(aiCardType === 4) {
+                generatedAiCard.src = `${diamonds5}`;
+            }
+        } else if(aiNCValue[i] === 6) {
+            if(aiCardType === 1) {
+                generatedAiCard.src = `${spades6}`;
+            } else if(aiCardType === 2) {
+                generatedAiCard.src = `${hearts6}`;
+            } else if(aiCardType === 3) {
+                generatedAiCard.src = `${clubs6}`;
+            } else if(aiCardType === 4) {
+                generatedAiCard.src = `${diamonds6}`;
+            }
+        } else if(aiNCValue[i] === 7) {
+            if(aiCardType === 1) {
+                generatedAiCard.src = `${spades7}`;
+            } else if(aiCardType === 2) {
+                generatedAiCard.src = `${hearts7}`;
+            } else if(aiCardType === 3) {
+                generatedAiCard.src = `${clubs7}`;
+            } else if(aiCardType === 4) {
+                generatedAiCard.src = `${diamonds7}`;
+            }
+        } else if(aiNCValue[i] === 8) {
+            if(aiCardType === 1) {
+                generatedAiCard.src = `${spades8}`;
+            } else if(aiCardType === 2) {
+                generatedAiCard.src = `${hearts8}`;
+            } else if(aiCardType === 3) {
+                generatedAiCard.src = `${clubs8}`;
+            } else if(aiCardType === 4) {
+                generatedAiCard.src = `${diamonds8}`;
+            }
+        } else if(aiNCValue[i] === 9) {
+            if(aiCardType === 1) {
+                generatedAiCard.src = `${spades9}`;
+            } else if(aiCardType === 2) {
+                generatedAiCard.src = `${hearts9}`;
+            } else if(aiCardType === 3) {
+                generatedAiCard.src = `${clubs9}`;
+            } else if(aiCardType === 4) {
+                generatedAiCard.src = `${diamonds9}`;
+            }
+        } else if(aiNCValue[i] === 10) {
+            let King10QueenOrJack = Math.floor((Math.random() * 4) + 1);
+            if(King10QueenOrJack === 1) {
+                if(aiCardType === 1) {
+                    generatedAiCard.src = `${spades10}`;
+                } else if(aiCardType === 2) {
+                    generatedAiCard.src = `${hearts10}`;
+                } else if(aiCardType === 3) {
+                    generatedAiCard.src = `${clubs10}`;
+                } else if(aiCardType === 4) {
+                    generatedAiCard.src = `${diamonds10}`;
+                }
+            } else if(King10QueenOrJack === 2) {
+                if(aiCardType === 1) {
+                    generatedAiCard.src = `${spadesJack}`;
+                } else if(aiCardType === 2) {
+                    generatedAiCard.src = `${heartsJack}`;
+                } else if(aiCardType === 3) {
+                    generatedAiCard.src = `${clubsJack}`;
+                } else if(aiCardType === 4) {
+                    generatedAiCard.src = `${diamondsJack}`;
+                }
+            } else if(King10QueenOrJack === 3) {
+                if(aiCardType === 1) {
+                    generatedAiCard.src = `${spadesQueen}`;
+                } else if(aiCardType === 2) {
+                    generatedAiCard.src = `${heartsQueen}`;
+                } else if(aiCardType === 3) {
+                    generatedAiCard.src = `${clubsQueen}`;
+                } else if(aiCardType === 4) {
+                    generatedAiCard.src = `${diamondsQueen}`;
+                }
+            } else if(King10QueenOrJack === 4) {
+                if(aiCardType === 1) {
+                    generatedAiCard.src = `${spadesKing}`;
+                } else if(aiCardType === 2) {
+                    generatedAiCard.src = `${heartsKing}`;
+                } else if(aiCardType === 3) {
+                    generatedAiCard.src = `${clubsKing}`;
+                } else if(aiCardType === 4) {
+                    generatedAiCard.src = `${diamondsKing}`;
+                }
+            }
+        } else if(aiNCValue[i] === 11) {
+            if(aiCardType === 1) {
+                generatedAiCard.src = `${spadesAce}`;
+            } else if(aiCardType === 2) {
+                generatedAiCard.src = `${heartsAce}`;
+            } else if(aiCardType === 3) {
+                generatedAiCard.src = `${clubsAce}`;
+            } else if(aiCardType === 4) {
+                generatedAiCard.src = `${diamondsAce}`
+            }
+        }
+    }
 }
 //endregion
