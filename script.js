@@ -3,8 +3,7 @@
    be fixed by doing random number 14-1 and having 12, 13, and 14 being the royal
    cards and assigning them a score value of 10.
  */
-//todo Sometimes the Dealer's Total doesnt pop up and we couldn't figure it out
-// Also the win, lose, or tie messages sometimes don't pop up
+//Sometimes the win lose and tie messages don't pop up
 // region Constants
 //math constants
 const hitButton = document.getElementById('hit');
@@ -14,7 +13,6 @@ const startingCard1Image = document.querySelector('img[src="src1"]');
 const startingCard2Image = document.querySelector('img[src="src2"]');
 const cardArea = document.getElementById('cardArea');
 const aiCardArea = document.getElementById('aiCardArea');
-const aiCardTotalText = document.getElementById('aiTotal');
 //score and cards constants
 let total;
 let startingCard1 = Math.floor((Math.random() * 11) + 1);
@@ -1512,7 +1510,5 @@ function revealAllAICards() {
             }
         }
     }
-    aiCardTotalText.classList.remove('hidden');
-    aiCardTotalText.textContent = `Dealer's Total: ${otherTotal}`;
 }
 //endregion
