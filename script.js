@@ -13,6 +13,7 @@ const startingCard1Image = document.querySelector('img[src="src1"]');
 const startingCard2Image = document.querySelector('img[src="src2"]');
 const cardArea = document.getElementById('cardArea');
 const aiCardArea = document.getElementById('aiCardArea');
+const aiTotalTextArea = document.getElementById('aiTotal');
 //score and cards constants
 let total;
 let startingCard1 = Math.floor((Math.random() * 11) + 1);
@@ -176,7 +177,6 @@ function endGame(){
     stayButton.classList.add('hidden');
     dealButton.classList.add('hidden');
     revealAICards();
-    revealAllAICards();
     gameEnded++;
     if(total > otherTotal && total <= 21 || otherTotal > 21 && total <= 21) {
         alert('You Win!');
@@ -187,7 +187,7 @@ function endGame(){
     else {
         alert('You Lost! :(')
     }
-
+    revealAllAICards();
 }
 function updateTotal(){
     const totalElement = document.querySelector('.total');
@@ -1510,5 +1510,7 @@ function revealAllAICards() {
             }
         }
     }
+    aiTotalTextArea.textContent = `Dealer's Total: ${otherTotal}`;
+    aiTotalTextArea.classList.remove('hidden');
 }
 //endregion
